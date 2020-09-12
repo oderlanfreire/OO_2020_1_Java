@@ -1,0 +1,2 @@
+fiz a calculadora com base no exercício do qxd Arcade, levei em torno de 40 minutos há 1 hora, com ajuda do raio X da atividade.
+Implementei mais operaçoes, adicionando, a subtração e multiplicação e resto da divisão.
