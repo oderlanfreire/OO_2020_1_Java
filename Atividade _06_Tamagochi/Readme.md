@@ -1,0 +1,2 @@
+levei mais ou menos duas horas pra fazer o codigo do tamagochi e mais duas horas usando casos de teste e corrigindo
+as falhas e tentando casos novos pra ver o que pode ser mudado mais na frente quando for refazer o mesmo codigo.
