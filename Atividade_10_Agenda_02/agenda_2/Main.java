@@ -2,7 +2,8 @@ package agenda_2;
 
 public class Main {
     public static void main(String[] args) {
-        Contato contato1 = new Contato("Erothides Neves Mitozzo");
+        // criação de contatos
+        Contato contato1 = new Contato("Erothides Meneghel");
         Contato contato2 = new Contato("Leticia dos Santos");
         Contato contato3 = new Contato("Agathar Nunes");
     
@@ -19,32 +20,41 @@ public class Main {
         contato3.addTelefone("claro", "648654213"); 
         contato3.addTelefone("tim", "455623181");
         contato3.addTelefone("oi", "9876443111");
+        
     
+        //craição de agenda e adição de contatos
         Agenda agenda = new Agenda();
 
-        agenda.addContato("Tidinha", contato1);
+        agenda.addContato("Tildinha", contato1);
         agenda.addContato("Lilly Santos", contato2);
-        agenda.addContato("Afonsinha", contato3);
-
-        for(Contato contato : agenda.search("a")){
+        agenda.addContato("Afonsinhar", contato3);
+        
+        //busca por numero
+        for(Contato contato : agenda.search("57")){
             System.out.println(contato);
         }
 
         System.out.println();
-
-        Contato contatos = agenda.getContato("Afonsinha");
+        
+        //busca por contato
+        Contato contatos = agenda.getContato("Afonsinhar");
         System.out.println(contatos.toString());
 
         System.out.println();
-
+        
+        //impressão de todos os contatos
         for(Contato contato : agenda.getContatos()){
             System.out.println(contato);
         }
         System.out.println();
         
+        //remoção de numero de telefone
         contato1.rmTelefone(2);
         contato3.rmTelefone(0);
-
+        
+        
+        
+        //impressão de todos os contatos
         for(Contato contato : agenda.getContatos()){
             System.out.println(contato);
         }
